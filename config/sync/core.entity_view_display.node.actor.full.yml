@@ -1,0 +1,41 @@
+uuid: 3c2f1d37-f307-44e0-8b8a-481f79b40310
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.actor.body
+    - field.field.node.actor.field_portada_actor
+    - image.style.full_image
+    - node.type.actor
+  module:
+    - image
+    - text
+    - user
+id: node.actor.full
+targetEntityType: node
+bundle: actor
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_portada_actor:
+    type: image
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      image_style: full_image
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

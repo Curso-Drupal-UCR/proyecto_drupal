@@ -1,0 +1,20 @@
+uuid: be2048e8-9d1e-4dac-ab10-b9a1c38baeef
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_titulo_pagina
+field_name: field_titulo_pagina
+entity_type: node
+type: text
+settings:
+  max_length: 255
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

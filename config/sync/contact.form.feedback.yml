@@ -1,0 +1,12 @@
+uuid: b02b5670-fa92-4bee-a9f4-2f7ed271fdb6
+langcode: en
+status: true
+dependencies: {  }
+id: feedback
+label: Feedback
+recipients:
+  - nick.gonse@gmail.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: /

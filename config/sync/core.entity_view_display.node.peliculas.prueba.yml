@@ -1,0 +1,56 @@
+uuid: 41260d71-c498-453f-99e2-724e034ea9a9
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.prueba
+    - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_categoras
+    - field.field.node.peliculas.field_destacada
+    - field.field.node.peliculas.field_direccion
+    - field.field.node.peliculas.field_fecha
+    - field.field.node.peliculas.field_portada
+    - field.field.node.peliculas.field_puntuacion
+    - field.field.node.peliculas.field_reparto
+    - field.field.node.peliculas.field_tags
+    - node.type.peliculas
+  module:
+    - datetime
+    - image
+    - user
+id: node.peliculas.prueba
+targetEntityType: node
+bundle: peliculas
+mode: prueba
+content:
+  field_fecha:
+    weight: 2
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_portada:
+    weight: 1
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  body: true
+  field_categoras: true
+  field_destacada: true
+  field_direccion: true
+  field_puntuacion: true
+  field_reparto: true
+  field_tags: true

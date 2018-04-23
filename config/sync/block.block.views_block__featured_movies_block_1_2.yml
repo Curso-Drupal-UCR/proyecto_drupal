@@ -1,0 +1,30 @@
+uuid: f2d1a7bd-dfea-4c1f-a855-0798f8a26cae
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.featured_movies
+  module:
+    - system
+    - views
+  theme:
+    - bartik
+id: views_block__featured_movies_block_1_2
+theme: bartik
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:featured_movies-block_1'
+settings:
+  id: 'views_block:featured_movies-block_1'
+  label: 'Mejores películas'
+  provider: views
+  label_display: visible
+  views_label: 'Mejores películas'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

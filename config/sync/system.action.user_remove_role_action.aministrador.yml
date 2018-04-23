@@ -1,0 +1,14 @@
+uuid: a0957aa3-3d36-4048-b4f8-dcfda09e68ad
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.aministrador
+  module:
+    - user
+id: user_remove_role_action.aministrador
+label: 'Remove the Aministrador role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: aministrador

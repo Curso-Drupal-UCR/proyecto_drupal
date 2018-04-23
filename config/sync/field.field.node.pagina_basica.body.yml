@@ -1,0 +1,22 @@
+uuid: 32de8872-5a59-403f-905a-7b49b142a9ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_basica
+  module:
+    - text
+id: node.pagina_basica.body
+field_name: body
+entity_type: node
+bundle: pagina_basica
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

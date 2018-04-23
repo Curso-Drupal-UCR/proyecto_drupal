@@ -1,0 +1,28 @@
+uuid: 4f6f952e-6cac-48ed-91ca-c94c873f9d6c
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pagina_basica.body
+    - node.type.pagina_basica
+  module:
+    - text
+    - user
+id: node.pagina_basica.teaser
+targetEntityType: node
+bundle: pagina_basica
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden: {  }

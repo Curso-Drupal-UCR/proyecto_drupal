@@ -1,0 +1,9 @@
+uuid: fdedf317-56ca-43a6-8a44-ad8615982dbc
+langcode: en
+status: true
+dependencies: {  }
+name: Etiquetas
+vid: etiquetas
+description: ''
+hierarchy: 0
+weight: 0

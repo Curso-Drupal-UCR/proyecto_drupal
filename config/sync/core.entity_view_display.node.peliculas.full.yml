@@ -1,0 +1,98 @@
+uuid: 21904207-fc6b-42f2-90c7-149d23d7a567
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.peliculas.body
+    - field.field.node.peliculas.field_categoras
+    - field.field.node.peliculas.field_destacada
+    - field.field.node.peliculas.field_direccion
+    - field.field.node.peliculas.field_fecha
+    - field.field.node.peliculas.field_portada
+    - field.field.node.peliculas.field_puntuacion
+    - field.field.node.peliculas.field_reparto
+    - field.field.node.peliculas.field_tags
+    - image.style.full_image
+    - node.type.peliculas
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.peliculas.full
+targetEntityType: node
+bundle: peliculas
+mode: full
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_categoras:
+    weight: 5
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_direccion:
+    weight: 7
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_fecha:
+    weight: 3
+    label: inline
+    settings:
+      timezone_override: ''
+      format_type: medium
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_portada:
+    weight: 1
+    label: hidden
+    settings:
+      image_style: full_image
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_puntuacion:
+    weight: 4
+    label: inline
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_reparto:
+    weight: 6
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_tags:
+    weight: 8
+    label: inline
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_destacada: true

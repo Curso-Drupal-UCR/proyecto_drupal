@@ -1,0 +1,22 @@
+uuid: 62cd7623-51d0-4a5f-970e-c33d1d758c73
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.pagina_basica
+id: node.pagina_basica.promote
+field_name: promote
+entity_type: node
+bundle: pagina_basica
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean
