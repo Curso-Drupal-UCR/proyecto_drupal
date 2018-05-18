@@ -1,0 +1,9 @@
+name: 'ejemplo drupal'
+type: module
+description: 'este es un modulo de ejemplo'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - libraries
+library_dependencies:
+  - flag_icon_css

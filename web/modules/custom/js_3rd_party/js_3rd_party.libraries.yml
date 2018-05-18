@@ -1,0 +1,3 @@
+js_3rd_party.demo_chartjs:
+  js:
+    js/demo_chart.js: {}

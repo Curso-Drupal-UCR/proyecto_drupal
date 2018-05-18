@@ -1,0 +1,30 @@
+<?php
+
+/**
+ * @file
+ * Contains ejemplo_drupal.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ejemplo_drupal_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        // Main module help for the ejemplo_drupal module.
+        case 'help.page.ejemplo_drupal':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('este es un modulo de ejemplo') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+function ejemplo_drupal_element_info_alter(array &$types){
+
+}
+
+

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/js_externo",
+  "type": "drupal-module",
+  "description": "Agregamos js de terceros",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/js_externo",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/js_externo",
+    "source": "http://cgit.drupalcode.org/js_externo"
+  },
+  "require": { }
+}

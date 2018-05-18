@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains itm_drupal_demos.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function itm_drupal_demos_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the itm_drupal_demos module.
+    case 'help.page.itm_drupal_demos':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Some demos for Drupal ITM') . '</p>';
+      return $output;
+
+    default:
+  }
+}

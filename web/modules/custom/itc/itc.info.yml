@@ -1,0 +1,6 @@
+name: ITC
+description: Este modulo es nuevo, vamos a ver que tal
+core: 8.x
+version: 1.0
+type: module
+package: Custom

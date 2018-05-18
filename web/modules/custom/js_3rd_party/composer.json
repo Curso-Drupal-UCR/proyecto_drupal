@@ -1,0 +1,14 @@
+{
+  "name": "drupal/js_3rd_party",
+  "type": "drupal-module",
+  "description": "La forma correcta de importar librerias",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/js_3rd_party",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/js_3rd_party",
+    "source": "http://cgit.drupalcode.org/js_3rd_party"
+  },
+  "require": { }
+}

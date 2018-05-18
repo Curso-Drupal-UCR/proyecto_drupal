@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains enlaceentityreference.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function enlaceentityreference_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the enlaceentityreference module.
+    case 'help.page.enlaceentityreference':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Para que los entity reference apunten a una vista') . '</p>';
+      return $output;
+
+    default:
+  }
+}

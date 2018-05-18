@@ -1,0 +1,3 @@
+js_externo.demo_chartjs:
+  js:
+    js/demo_chartjs.js: {}

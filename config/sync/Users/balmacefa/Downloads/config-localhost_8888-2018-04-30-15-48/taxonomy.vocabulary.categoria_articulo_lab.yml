@@ -1,0 +1,9 @@
+uuid: 8538bc18-1e86-4c7f-a9b1-bff0bbfaad98
+langcode: es
+status: true
+dependencies: {  }
+name: 'Categoria Articulo lab'
+vid: categoria_articulo_lab
+description: ''
+hierarchy: 0
+weight: 0

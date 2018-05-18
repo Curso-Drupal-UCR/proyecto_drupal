@@ -1,0 +1,9 @@
+name: 'JS Externo'
+type: module
+description: 'Agregamos js de terceros'
+core: 8.x
+package: 'Custom'
+dependencies:
+  - libraries
+library_dependencies:
+  - chart_js

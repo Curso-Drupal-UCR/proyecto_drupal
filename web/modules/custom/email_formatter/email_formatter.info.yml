@@ -1,0 +1,6 @@
+name: Email Formatter
+core: 8.x
+version: 1.0
+type: module
+package: Custom
+description: Que el email se muestre de otra forma, chaval

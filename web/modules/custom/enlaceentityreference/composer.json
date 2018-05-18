@@ -1,0 +1,14 @@
+{
+  "name": "drupal/enlaceentityreference",
+  "type": "drupal-module",
+  "description": "Para que los entity reference apunten a una vista",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/enlaceentityreference",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/enlaceentityreference",
+    "source": "http://cgit.drupalcode.org/enlaceentityreference"
+  },
+  "require": { }
+}

@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Contains js_externo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function js_externo_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        case 'help.page.js_externo':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('Agregamos js de terceros') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function js_externo_theme() {
+    return [
+        'js_externo_demo_charts' => [
+            'variables' => [],
+        ],
+    ];
+}

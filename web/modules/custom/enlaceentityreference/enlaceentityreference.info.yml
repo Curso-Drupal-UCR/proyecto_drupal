@@ -1,0 +1,5 @@
+name: 'EnlaceEntityReference'
+type: module
+description: 'Para que los entity reference apunten a una vista'
+core: 8.x
+package: 'Custom'

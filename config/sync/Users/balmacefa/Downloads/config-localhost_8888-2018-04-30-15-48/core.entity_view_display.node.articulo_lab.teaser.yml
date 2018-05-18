@@ -1,0 +1,45 @@
+uuid: 3c8315e9-f3d1-42bf-8bcb-a424bea7b014
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.articulo_lab.body
+    - field.field.node.articulo_lab.field_clasificacion
+    - field.field.node.articulo_lab.field_imagen
+    - image.style.medium
+    - node.type.articulo_lab
+  module:
+    - image
+    - text
+    - user
+id: node.articulo_lab.teaser
+targetEntityType: node
+bundle: articulo_lab
+mode: teaser
+content:
+  body:
+    label: above
+    type: text_trimmed
+    weight: 2
+    settings:
+      trim_length: 500
+    third_party_settings: {  }
+    region: content
+  field_imagen:
+    type: image
+    weight: 1
+    region: content
+    label: above
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_clasificacion: true
+  langcode: true

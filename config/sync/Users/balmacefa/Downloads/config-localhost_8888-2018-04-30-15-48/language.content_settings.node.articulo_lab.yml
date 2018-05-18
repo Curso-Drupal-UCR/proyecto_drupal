@@ -1,0 +1,11 @@
+uuid: d9a43f58-9976-42fa-8f90-33d01ed65e91
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.articulo_lab
+id: node.articulo_lab
+target_entity_type_id: node
+target_bundle: articulo_lab
+default_langcode: site_default
+language_alterable: false

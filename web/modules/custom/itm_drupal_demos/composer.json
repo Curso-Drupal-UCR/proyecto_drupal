@@ -1,0 +1,14 @@
+{
+  "name": "drupal/itm_drupal_demos",
+  "type": "drupal-module",
+  "description": "Some demos for Drupal ITM",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/itm_drupal_demos",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/itm_drupal_demos",
+    "source": "http://cgit.drupalcode.org/itm_drupal_demos"
+  },
+  "require": { }
+}

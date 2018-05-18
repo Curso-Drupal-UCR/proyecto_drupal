@@ -1,0 +1,11 @@
+uuid: 01d812d1-e579-413e-a8cd-a09fa69ef64d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categoria_articulo_lab
+id: taxonomy_term.categoria_articulo_lab
+target_entity_type_id: taxonomy_term
+target_bundle: categoria_articulo_lab
+default_langcode: site_default
+language_alterable: false
