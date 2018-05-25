@@ -1,0 +1,5 @@
+name: 'Drupal ITM Demos'
+type: module
+description: 'Some demos for Drupal ITM'
+core: 8.x
+package: 'Custom'

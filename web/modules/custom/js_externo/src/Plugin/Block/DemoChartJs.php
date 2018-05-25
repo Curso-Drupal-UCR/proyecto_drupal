@@ -19,6 +19,7 @@ class DemoChartJs extends BlockBase {
      */
     public function build() {
         $build = [];
+
         $build['chart'] = [
             '#theme' => 'js_externo_demo_charts',
             '#attached' => [
@@ -28,6 +29,7 @@ class DemoChartJs extends BlockBase {
                 ],
             ],
         ];
+
         return $build;
     }
 }

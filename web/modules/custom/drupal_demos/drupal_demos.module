@@ -11,14 +11,28 @@ use Drupal\Core\Routing\RouteMatchInterface;
  * Implements hook_help().
  */
 function drupal_demos_help($route_name, RouteMatchInterface $route_match) {
-  switch ($route_name) {
-    // Main module help for the drupal_demos module.
-    case 'help.page.drupal_demos':
-      $output = '';
-      $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('Demos para el curso de Drupal') . '</p>';
-      return $output;
+    switch ($route_name) {
+        // Main module help for the drupal_demos module.
+        case 'help.page.drupal_demos':
+            $output = '';
+            $output .= '<h3>' . t('About') . '</h3>';
+            $output .= '<p>' . t('Demos para el curso de Drupal') . '</p>';
+            return $output;
 
-    default:
-  }
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function drupal_demos_theme($existing, $type, $theme, $path) {
+    return [
+        'agregar_campos' => [
+            'variables' => [
+                'parametros' => []
+            ],
+            'template' => 'agregar-campos'
+        ]
+    ];
 }

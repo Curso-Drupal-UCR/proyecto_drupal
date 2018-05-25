@@ -1,0 +1,14 @@
+{
+  "name": "drupal/bloques_de_prueba",
+  "type": "drupal-module",
+  "description": "Bloques para hacer pruebas",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/bloques_de_prueba",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/bloques_de_prueba",
+    "source": "http://cgit.drupalcode.org/bloques_de_prueba"
+  },
+  "require": { }
+}

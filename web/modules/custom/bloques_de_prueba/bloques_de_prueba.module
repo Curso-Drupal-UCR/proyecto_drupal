@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains bloques_de_prueba.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function bloques_de_prueba_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the bloques_de_prueba module.
+    case 'help.page.bloques_de_prueba':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Bloques para hacer pruebas') . '</p>';
+      return $output;
+
+    default:
+  }
+}

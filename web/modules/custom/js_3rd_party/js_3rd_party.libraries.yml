@@ -1,3 +1,4 @@
 js_3rd_party.demo_chartjs:
   js:
+    /libraries/chart_js/Chart.js: {}
     js/demo_chart.js: {}

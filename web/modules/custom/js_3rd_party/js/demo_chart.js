@@ -1,8 +1,7 @@
 (function ($, Drupal) {
-
     Drupal.behaviors.demoChartJsDemoChart = {
         attach: function (context, settings) {
-            var ctx = document.getElementById("myChart").getContext('2d');
+            var ctx = document.getElementById("myChart");
             var myChart = new Chart(ctx, {
                 type: 'bar',
                 data: {
@@ -33,7 +32,7 @@
                     scales: {
                         yAxes: [{
                             ticks: {
-                                beginAtZero:true
+                                beginAtZero: true
                             }
                         }]
                     }
@@ -41,5 +40,4 @@
             });
         }
     };
-
 })(jQuery, Drupal);

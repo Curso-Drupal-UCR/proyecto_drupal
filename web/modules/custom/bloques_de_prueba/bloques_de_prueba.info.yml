@@ -1,0 +1,5 @@
+name: 'Bloques de prueba'
+type: module
+description: 'Bloques para hacer pruebas'
+core: 8.x
+package: 'Custom'
