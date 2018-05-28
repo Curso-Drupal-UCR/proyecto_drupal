@@ -1,0 +1,7 @@
+demo_modulo.demo_modulo_controller:
+  path: '/test-page'
+  defaults:
+    _controller:
+    _title: 'Página del modulo'
+  requirements:
+    _permission: 'access content'

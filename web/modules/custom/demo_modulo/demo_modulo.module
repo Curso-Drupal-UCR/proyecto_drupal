@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains demo_modulo.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function demo_modulo_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the demo_modulo module.
+    case 'help.page.demo_modulo':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Este modulo es más real') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function demo_modulo_theme() {
+  return [
+    'demo_modulo' => [
+      'render element' => 'children',
+    ],
+  ];
+}

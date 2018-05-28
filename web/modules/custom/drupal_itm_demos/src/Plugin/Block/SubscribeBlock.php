@@ -24,6 +24,7 @@ class SubscribeBlock extends BlockBase implements ContainerFactoryPluginInterfac
      * @var \Drupal\Core\Form\FormBuilderInterface
      */
     protected $formBuilder;
+
     /**
      * Drupal\Core\Render\RendererInterface definition.
      *
@@ -43,6 +44,7 @@ class SubscribeBlock extends BlockBase implements ContainerFactoryPluginInterfac
      */
     public function __construct(array $configuration, $plugin_id, $plugin_definition, FormBuilderInterface $form_builder, RendererInterface $renderer) {
         parent::__construct($configuration, $plugin_id, $plugin_definition);
+
         $this->formBuilder = $form_builder;
         $this->renderer = $renderer;
     }

@@ -1,0 +1,33 @@
+ejemplo_modulos.test_controller:
+  path: '/test-controller'
+  defaults:
+    _controller: '\Drupal\ejemplo_modulos\Controller\EjemploModulosController::textController'
+    _title: 'Test Controller'
+  requirements:
+    _permission: 'access content'
+
+ejemplo_modulos.test_parameter:
+  path: '/test-parameter/{parametro}'
+  defaults:
+    _controller: '\Drupal\ejemplo_modulos\Controller\EjemploModulosController::recibeParametro'
+    _title: 'Test Controller'
+  requirements:
+    _permission: 'access content'
+
+ejemplo_modulos.test_user:
+  path: 'example/{user}'
+  defaults:
+    _controller: '\Drupal\ejemplo_modulos\Controller\EjemploModulosController::content'
+  requirements:
+    _permission: 'access content'
+
+ejemplo_modulos.configuration_form:
+  path: '/admin/config/ejemplo_modulos'
+  defaults:
+    _form: '\Drupal\ejemplo_modulos\Form\ConfigurationForm'
+    _title: 'Formulario de configuación'
+  requirements:
+    _permission: 'access ejemplo configuration'
+  options:
+    _admin_route: TRUE
+  

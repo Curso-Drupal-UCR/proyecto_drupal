@@ -1,0 +1,3 @@
+ejemplo_modulos.accordion:
+  js:
+    js/accordion.js: {}

@@ -1,0 +1,14 @@
+{
+  "name": "drupal/ejemplo_modulos",
+  "type": "drupal-module",
+  "description": "Este modulo tiene todos los ejemplos",
+  "keywords": ["Drupal"],
+  "license": "GPL-2.0+",
+  "homepage": "https://www.drupal.org/project/ejemplo_modulos",
+  "minimum-stability": "dev",
+  "support": {
+    "issues": "https://www.drupal.org/project/issues/ejemplo_modulos",
+    "source": "http://cgit.drupalcode.org/ejemplo_modulos"
+  },
+  "require": { }
+}

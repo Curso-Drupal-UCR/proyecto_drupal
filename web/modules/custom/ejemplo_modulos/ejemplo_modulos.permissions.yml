@@ -1,0 +1,4 @@
+
+access ejemplo configuration:
+  title: 'Permiso al formulario de configuracion'
+  description: 'Se permite acceder al formulario de configuración del módulo de ejemplos'

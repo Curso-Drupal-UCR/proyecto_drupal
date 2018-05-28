@@ -1,0 +1,49 @@
+<?php
+
+/**
+ * @file
+ * Contains ejemplo_modulos.module.
+ */
+
+use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function ejemplo_modulos_help($route_name, RouteMatchInterface $route_match) {
+    switch ($route_name) {
+        // Main module help for the ejemplo_modulos module.
+        case 'help.page.ejemplo_modulos':
+            $output = '';
+            $output .= '<h3>' . t('Acerca de') . '</h3>';
+            $output .= '<p>' . t('Este modulo tiene todos los ejemplos') . '</p>';
+            return $output;
+
+        default:
+    }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function ejemplo_modulos_theme() {
+    return [
+        'item_accordion' => [
+            'variables' => [
+                'title' => '',
+                'description' => ''
+            ],
+            'template' => 'item-accordion'
+        ],
+    ];
+}
+
+function ejemplo_modulos_form_alter(&$form, FormStateInterface $form_state, $form_id){
+//    dsm($form_id);
+
+    $form['account']['name']['#weight'] = -1;
+    $form['account']['mail']['#weight'] = -2;
+
+//    dsm($form['account']['name']);
+}

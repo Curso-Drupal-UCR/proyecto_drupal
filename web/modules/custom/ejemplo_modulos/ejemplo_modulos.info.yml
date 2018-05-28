@@ -1,0 +1,5 @@
+name: 'Ejemplo Modulos'
+type: module
+description: 'Este modulo tiene todos los ejemplos'
+core: 8.x
+package: 'Custom'

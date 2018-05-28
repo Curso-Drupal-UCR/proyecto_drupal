@@ -19,7 +19,7 @@ class DemoController extends ControllerBase {
         $items = [
             [
                 'title' => $this->t('title 1'),
-                'description' => $this->t('description 1'),
+                'description' => $this->t('z'),
             ],
             [
                 'title' => $this->t('title 2'),
@@ -48,6 +48,7 @@ class DemoController extends ControllerBase {
                 '#description' => $item['description'],
             ];
         }
+
         return $build;
     }
 

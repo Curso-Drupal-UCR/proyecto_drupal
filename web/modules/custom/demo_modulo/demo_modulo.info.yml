@@ -1,0 +1,5 @@
+name: 'Demo Modulo'
+type: module
+description: 'Este modulo es más real'
+core: 8.x
+package: 'Custom'

@@ -1,0 +1,6 @@
+ejemplo_modulos.configuration_form:
+  title: 'Ejemplo Módulos'
+  route_name: ejemplo_modulos.configuration_form
+  description: 'Acá esta la url para configurar el módulo'
+  parent: system.admin_config_system
+  weight: 99
