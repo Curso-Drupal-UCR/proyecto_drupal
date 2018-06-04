@@ -1,0 +1,7 @@
+demo_modulo.configuration_form:
+  title: 'Configuracion del Demo Modulo'
+  route_name: demo_modulo.configuration_form
+  description: 'La configuracion del modulo Demo Modulo'
+  parent: system.admin_config_system
+  weight: 99
+

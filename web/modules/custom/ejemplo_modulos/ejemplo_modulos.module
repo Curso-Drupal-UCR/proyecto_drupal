@@ -39,11 +39,13 @@ function ejemplo_modulos_theme() {
     ];
 }
 
-function ejemplo_modulos_form_alter(&$form, FormStateInterface $form_state, $form_id){
-//    dsm($form_id);
-
-    $form['account']['name']['#weight'] = -1;
-    $form['account']['mail']['#weight'] = -2;
-
-//    dsm($form['account']['name']);
-}
+//function ejemplo_modulos_form_alter(&$form, FormStateInterface $form_state, $form_id){
+////    dsm($form_id);
+//
+//    if ($form_id === 'user_form') {
+//        $form['account']['name']['#weight'] = -1;
+//        $form['account']['mail']['#weight'] = -2;
+//    }
+//
+////    dsm($form['account']['name']);
+//}

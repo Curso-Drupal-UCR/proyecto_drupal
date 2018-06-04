@@ -1,6 +1,6 @@
 <?php
 
-namespace Drupal\ejemplo_modulos\Plugin\Block;
+namespace Drupal\demo_modulo\Plugin\Block;
 
 use Drupal\Core\Block\BlockBase;
 use Drupal\Core\Form\FormBuilderInterface;
@@ -75,8 +75,12 @@ class SubscribeBlock extends BlockBase implements ContainerFactoryPluginInterfac
      * @return static
      *   Returns an instance of this plugin.
      */
-    public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
-        return new static($configuration, $plugin_id, $plugin_definition, $container->get('form_builder'), $container->get('renderer'),  $container->get('country_manager'));
+    public static function create(ContainerInterface $container,
+                                  array $configuration,
+                                  $plugin_id, $plugin_definition) {
+        return new static($configuration, $plugin_id, $plugin_definition,
+            $container->get('form_builder'), $container->get('renderer'),
+            $container->get('country_manager'));
     }
 
     /**
@@ -85,17 +89,9 @@ class SubscribeBlock extends BlockBase implements ContainerFactoryPluginInterfac
     public function build() {
         $build = [];
 
-        //dsm($this->country_manager->getStandardList());
-
-        $form = $this->formBuilder->getForm('Drupal\ejemplo_modulos\Form\SubscribeForm');
+        $form = $this->formBuilder->getForm('Drupal\demo_modulo\Form\SubscriptionForm');
         $build['subscribe'] = $form;
 
-//        $build['alll'] = [
-//            '#type' => 'select',
-//            '#default_value' => '',
-//            '#title' => $this->t('Seleccione el país'),
-//            '#options' => $this->country_manager->getStandardList()
-//        ];
 
         return $build;
     }
