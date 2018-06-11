@@ -7670,8 +7670,8 @@ a {
 .bg-inverse {
   background: #A8CF45 !important; }
 
-.bg-secondary {
-  background-color: #0079C0 !important; }
+.bg-secondary, header .navbar {
+  background-color: #343a40 !important; }
 
 .site-footer {
   background: #0079C0 !important; }
@@ -7699,11 +7699,32 @@ a {
 .slick > div {
   margin: 0 15px; }
 
+.menu--main {
+  margin-left: auto; }
+
+.path-frontpage .menu--main {
+  margin-left: auto;
+  margin-right: auto; }
+
+.region-top-header {
+  margin: 0 auto; }
+
 .title__pelicula > a {
   font-size: 1rem;
   color: #000; }
   .title__pelicula > a:hover, .title__pelicula > a:focus {
     color: red; }
+
+header .navbar-dark .navbar-nav .nav-link {
+  color: #f8f9fa; }
+
+.featured-top {
+  width: 100%;
+  max-width: 100%; }
+  .featured-top__inner {
+    width: 100%;
+    margin: 0;
+    padding: 0; }
 
 .tagcloud ul {
   margin: 0;

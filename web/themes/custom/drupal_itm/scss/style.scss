@@ -23,8 +23,8 @@ a {
   background: $primary-shade !important;
 }
 
-.bg-secondary {
-  background-color: $accent-shade !important;
+.bg-secondary, header .navbar {
+  background-color: $gray-800 !important;
 }
 
 .site-footer {
@@ -61,12 +61,48 @@ a {
   margin: 0 15px;
 }
 
+.menu--main {
+  margin-left: auto;
+}
+
+.path-frontpage {
+  .menu--main {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.region-top-header {
+  margin: 0 auto;
+}
+
 .title__pelicula > a {
   font-size: 1rem;
   color: #000;
 
   &:hover, &:focus {
     color: red;
+  }
+}
+
+header {
+  .navbar-dark {
+    .navbar-nav {
+      .nav-link {
+        color: $gray-100;
+      }
+    }
+  }
+}
+
+.featured-top {
+  width: 100%;
+  max-width: 100%;
+
+  &__inner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
 

@@ -12,16 +12,8 @@ demo_modulo.configuration_form:
     _form: '\Drupal\demo_modulo\Form\ConfigurationForm'
     _title: 'ConfigurationForm'
   requirements:
-    _permission: 'access administration pages'
+    _permission: 'access demo configuration'
   options:
     _admin_route: TRUE
 
 
-demo_modulo.subscription_form:
-  path: '/demo_modulo/form/subscription'
-  defaults:
-    _form: '\Drupal\demo_modulo\Form\SubscriptionForm'
-    _title: 'SubscriptionForm'
-  requirements:
-    _access: 'TRUE'
-  

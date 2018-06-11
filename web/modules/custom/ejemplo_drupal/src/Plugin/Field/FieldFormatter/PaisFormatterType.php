@@ -51,6 +51,9 @@ class PaisFormatterType extends FormatterBase {
         $elements = [];
         $elements['#attached']['library'][] = 'ejemplo_drupal/ejemplo_drupal.flags';
 
+//        dsm(\Drupal::time()->getRequestTime());
+//
+//        dsm(format_date(\Drupal::time()->getRequestTime(), 'long'));
 
         foreach ($items as $delta => $item) {
             $elements[$delta] = [
@@ -58,12 +61,6 @@ class PaisFormatterType extends FormatterBase {
                 '#markup' => '<p><span class="flag-icon flag-icon-' . strtolower($item->value) . '"></span>' . $paises[$item->value] . '</p>',
             ];
         }
-
-        /*'#attached' => [
-            'library' => [
-                'libraries/flag-icon-css',
-            ],
-        ]*/
 
         return $elements;
     }
