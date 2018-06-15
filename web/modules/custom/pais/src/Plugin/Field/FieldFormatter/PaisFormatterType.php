@@ -25,16 +25,14 @@ class PaisFormatterType extends FormatterBase {
      * {@inheritdoc}
      */
     public static function defaultSettings() {
-        return [// Implement default settings.
-            ] + parent::defaultSettings();
+        return [ ] + parent::defaultSettings();
     }
 
     /**
      * {@inheritdoc}
      */
     public function settingsForm(array $form, FormStateInterface $form_state) {
-        return [// Implement settings form.
-            ] + parent::settingsForm($form, $form_state);
+        return [ ] + parent::settingsForm($form, $form_state);
     }
 
     /**
@@ -42,7 +40,6 @@ class PaisFormatterType extends FormatterBase {
      */
     public function settingsSummary() {
         $summary = [];
-        // Implement settings summary.
 
         return $summary;
     }
@@ -53,14 +50,10 @@ class PaisFormatterType extends FormatterBase {
     public function viewElements(FieldItemListInterface $items, $langcode) {
         $elements = [];
 
+        // $elements['#attached']['library'][] = 'ejemplo_drupal/ejemplo_drupal.flags';
         foreach ($items as $delta => $item) {
             $elements[$delta] = [
                 '#markup' => $this->viewValue($item),
-                '#attached' => [
-                    'library' => [
-                        'libraries/flag-icon-css',
-                    ],
-                ]
             ];
         }
 

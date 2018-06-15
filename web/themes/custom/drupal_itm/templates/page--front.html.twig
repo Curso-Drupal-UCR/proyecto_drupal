@@ -67,10 +67,19 @@
  * @see html.html.twig
  */
 #}
-<div id="page-wrapper">
+
+{% set navbar_attributes = navbar_attributes.addClass('menu-principal navbar-red') %}
+
+<div id="page-wrapper solo en el home">
     <div id="page">
         <header id="header" class="header" role="banner" aria-label="{{ 'Site header'|t }}">
             {% block head %}
+                <!--
+                    Si existe bloques en estas regiones
+                    -- page.secondary_menu
+                    -- page.top_header
+                    -- page.top_header_form
+                -->
                 {% if page.secondary_menu or page.top_header or page.top_header_form %}
                     <nav{{ navbar_top_attributes }}>
                         {% if container_navbar %}
@@ -88,6 +97,8 @@
                         {% endif %}
                     </nav>
                 {% endif %}
+
+                <!-- Menu principal-->
                 <nav{{ navbar_attributes }}>
                     {% if container_navbar %}
                     <div class="container">
@@ -116,6 +127,8 @@
                     </div>
                     {% endif %}
                 </nav>
+                <!-- Menu principal-->
+
             {% endblock %}
         </header>
         {% if page.highlighted %}
@@ -128,10 +141,16 @@
         {% if page.featured_top %}
             {% block featured %}
                 <div class="featured-top">
-                    <aside class="featured-top__inner section {{ container }} clearfix" role="complementary">
+                    <div class="container-fluid featured-block-content">
                         {{ page.featured_top }}
-                    </aside>
+                    </div>
                 </div>
+
+                {#<div class="featured-top">#}
+                {#<aside class="featured-top__inner section {{ container }} clearfix" role="complementary">#}
+                {##}
+                {#</aside>#}
+                {#</div>#}
             {% endblock %}
         {% endif %}
         <div id="main-wrapper" class="layout-main-wrapper clearfix">
@@ -165,7 +184,7 @@
         </div>
         {% if page.featured_bottom_first or page.featured_bottom_second or page.featured_bottom_third %}
             <div class="featured-bottom">
-                <aside class="{{ container }} clearfix featured-bottom--container px-0 mx-0" role="complementary">
+                <aside class="{{ container }} clearfix" role="complementary">
                     {{ page.featured_bottom_first }}
                     {{ page.featured_bottom_second }}
                     {{ page.featured_bottom_third }}
