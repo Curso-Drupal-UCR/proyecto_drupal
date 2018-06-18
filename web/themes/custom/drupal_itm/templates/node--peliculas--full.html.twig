@@ -69,11 +69,56 @@
     not node.isPublished() ? 'node--unpublished',
     view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
     'clearfix',
-    'container',
 ] %}
 
-{#{{ kint(content | keys ) }}#}
+{{ kint(content | keys) }}
 
+<article{{ attributes.addClass(classes) }}>
+    <header>
+
+        {{ title_prefix }}
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h2{{ title_attributes.addClass('node__title', 'node__pelicula_titulo', 'display-4') }}>
+                    <a href="{{ url }}" rel="bookmark">{{ label }}</a><br>
+
+                    <div class="node__meta">
+                        {{ author_picture }}
+                        {% block submitted %}
+                            <em{{ author_attributes }}>
+                                {% trans %}Submitted by {{ author_name }} on {{ date }}{% endtrans %}
+                            </em>
+                        {% endblock %}
+                        {{ metadata }}
+                    </div>
+                </h2>
+            </div>
+        </div>
+        {{ title_suffix }}
+
+    </header>
+    <div class="row">
+        <div{{ content_attributes.addClass('node__content', 'clearfix', 'col-12', 'col-md-8') }}>
+            {{ content.field_portada }} {{ content.body }}
+
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    {{ content.field_reparto }}
+                </div>
+                <div class="col-12 col-md-6">
+                    {{ content.field_direccion }}
+                </div>
+            </div>
+        </div>
+        <div class="content--sidebar col-12 col-md-4">
+            {{ content.field_categoras }}
+            {{ content.field_tags }}
+        </div>
+    </div>
+</article>
+
+{#{{ kint(content | keys ) }}#}
+{#
 <article{{ attributes.addClass(classes) }}>
     <header>
         <div class="jumbotron jumbotron-fluid text-center cover-pelicula">
@@ -116,4 +161,4 @@
             {{ content.field_tags }}
         </div>
     </div>
-</article>
+</article>#}

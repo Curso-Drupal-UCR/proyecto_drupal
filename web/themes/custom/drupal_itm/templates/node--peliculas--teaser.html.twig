@@ -94,6 +94,7 @@
         {% endif %}
     </header>
     <div{{ content_attributes.addClass('node__content', 'clearfix') }}>
+        {{ kint(content | keys) }}
         {{ content }}
     </div>
 </article>

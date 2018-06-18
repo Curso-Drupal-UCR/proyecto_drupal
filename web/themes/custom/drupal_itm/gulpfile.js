@@ -30,7 +30,7 @@ gulp.task('serve', ['sass'], function () {
     });
 
     gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'scss/*.scss'], ['sass']);
-    // gulp.watch("templates/*.html.twig").on('change', browserSync.reload);
+    gulp.watch("templates/*.html.twig").on('change', browserSync.reload);
 });
 
 gulp.task('default', ['js', 'serve']);

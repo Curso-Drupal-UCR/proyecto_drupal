@@ -192,7 +192,7 @@ header {
       &:hover {
         background-color: #3498db;
         border: 1px solid #3498db;
-        color: #fff;
+        color: $white;
       }
     }
   }
@@ -209,6 +209,37 @@ header {
         @media (min-width: map-get($grid-breakpoints, 'xl')) { }
       }
     }
+  }
+}
+
+.node__pelicula_background{
+  position: relative;
+  overflow: hidden;
+
+  &:after{
+    content: '';
+    background: $black;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    transform: rotate(-39deg);
+  }
+
+  &:before{
+    content: '';
+    background: $red;
+    position: absolute;
+    width: 40%;
+    height: 100%;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    transform: rotate(-39deg);
   }
 }
 
