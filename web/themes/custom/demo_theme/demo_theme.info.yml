@@ -1,0 +1,7 @@
+name: Demo theme
+type: theme
+description: 'Only for demo purposes'
+base theme: classy
+core: 8.x
+libraries:
+  - demo_theme/global-styling
